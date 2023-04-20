@@ -1,28 +1,47 @@
-import { openBlock as s, createElementBlock as p, createTextVNode as d, createElementVNode as c } from "vue";
-const a = (e, t) => {
-  const o = e.__vccOpts || e;
-  for (const [n, r] of t)
-    o[n] = r;
-  return o;
-}, _ = {
+import { openBlock as s, createElementBlock as d, createTextVNode as p, createElementVNode as t } from "vue";
+const _ = (o, n) => {
+  const e = o.__vccOpts || o;
+  for (const [r, c] of n)
+    e[r] = c;
+  return e;
+}, i = {
   name: "MeuCompo",
   components: {},
   data() {
     return {};
   },
   methods: {}
-}, i = { style: { border: "1px solid red", padding: "1rem" } }, l = /* @__PURE__ */ c("h1", null, "Meu Compo", -1), m = /* @__PURE__ */ c("input", {
+}, u = { style: { border: "1px solid red", padding: "1rem" } }, l = /* @__PURE__ */ t("h1", null, "Meu Compo", -1), m = /* @__PURE__ */ t("input", {
   type: "text",
-  placeholder: "Digita aí..."
+  placeholder: "Digita aí............."
 }, null, -1);
-function u(e, t, o, n, r, h) {
-  return s(), p("div", i, [
+function h(o, n, e, r, c, a) {
+  return s(), d("div", u, [
     l,
-    d(" Meu Compo: "),
+    p(" Meu Compowwwww: "),
     m
   ]);
 }
-const x = /* @__PURE__ */ a(_, [["render", u]]);
+const y = /* @__PURE__ */ _(i, [["render", h]]), $ = {
+  name: "OutroCompo",
+  components: {},
+  data() {
+    return {};
+  },
+  methods: {}
+}, f = { style: { border: "1px solid red", padding: "1rem" } }, x = /* @__PURE__ */ t("h1", null, "Outro Compo", -1), C = /* @__PURE__ */ t("input", {
+  type: "checkbox",
+  placeholder: "Digita aí............."
+}, null, -1);
+function g(o, n, e, r, c, a) {
+  return s(), d("div", f, [
+    x,
+    p(" Outro: "),
+    C
+  ]);
+}
+const O = /* @__PURE__ */ _($, [["render", g]]);
 export {
-  x as MeuCompo
+  y as MeuCompo,
+  O as OutroCompo
 };

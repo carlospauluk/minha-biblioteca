@@ -1,9 +1,11 @@
 {
-  "name": "minha-biblioteca",
-  "version": "0.0.1",
+  "name": "@carlos.pauluk/minha-biblioteca",
+  "version": "0.0.4",
   "private": false,
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/minha-biblioteca.umd.cjs",
   "module": "./dist/minha-biblioteca.js",
   "exports": {
@@ -31,5 +33,19 @@
     "eslint-plugin-vue": "^9.9.0",
     "prettier": "^2.8.4",
     "vite": "^4.1.4"
-  }
+  },
+  "description": "This template should help get you started developing with Vue 3 in Vite.",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlospauluk/minha-biblioteca.git"
+  },
+  "author": "Carlos Eduardo Pauluk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlospauluk/minha-biblioteca/issues"
+  },
+  "homepage": "https://github.com/carlospauluk/minha-biblioteca#readme"
 }
